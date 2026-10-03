@@ -1,0 +1,16 @@
+# Hexo 构建产物
+public/
+.deploy*/
+db.json
+
+# 依赖
+node_modules/
+
+# 日志与临时文件
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/

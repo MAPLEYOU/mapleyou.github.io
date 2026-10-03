@@ -1,0 +1,63 @@
+# Butterfly 主题配置覆盖
+# 完整配置参考: https://butterfly.js.org/
+
+nav:
+  logo:
+  display_title: true
+  fixed: false
+  menu:
+    首页: / || fas fa-home
+    归档: /archives/ || fas fa-archive
+    标签: /tags/ || fas fa-tags
+    分类: /categories/ || fas fa-folder-open
+    关于: /about/ || fas fa-user
+
+# 页脚
+footer:
+  owner:
+    enable: true
+    since: 2026
+  custom_text:
+
+# 首页文章封面: 没写 cover 的文章不显示封面图, 首页更干净
+index:
+  cover:
+    default_cover:
+
+# 文章页
+post:
+  cover:
+    default_cover:
+  meta:
+    date: true
+    updated: false
+    tags: true
+    categories: true
+
+# 侧边栏
+aside:
+  enable: true
+  display:
+    archive: true
+    tag: true
+    category: true
+  card_author:
+    enable: true
+    description:
+      - ISP / 相机影像 / 开发随笔
+  card_announcement:
+    enable: false
+  card_recent_post:
+    enable: true
+    limit: 5
+  card_categories:
+    enable: true
+    limit: 8
+  card_tags:
+    enable: true
+    limit: 20
+    color: false
+  card_archives:
+    enable: false
+  card_webinfo:
+    enable: false
