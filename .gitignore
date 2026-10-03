@@ -3,6 +3,9 @@ public/
 .deploy*/
 db.json
 
+# WorkBuddy 内部数据 (调试截图/工作日志, 不对外)
+.workbuddy/
+
 # 依赖
 node_modules/
 
