@@ -1,23 +1,37 @@
 # Butterfly 主题配置覆盖
 # 完整配置参考: https://butterfly.js.org/
 
+# 顶部导航菜单 (注意: menu 是顶层配置)
+menu:
+  首页: / || fas fa-home
+  专栏: /courses/ || fas fa-book-open
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  GitHub: https://github.com/MAPLEYOU || fab fa-github
+  关于: /about/ || fas fa-user
+
 nav:
   logo:
   display_title: true
   fixed: false
-  menu:
-    首页: / || fas fa-home
-    归档: /archives/ || fas fa-archive
-    标签: /tags/ || fas fa-tags
-    分类: /categories/ || fas fa-folder-open
-    关于: /about/ || fas fa-user
 
 # 页脚
 footer:
   owner:
     enable: true
     since: 2026
-  custom_text:
+  custom_text: '<a href="https://github.com/MAPLEYOU/mapleyou.github.io" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub 订阅本站</a>'
+
+# 全站注入
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/course.css">
+
+# 侧边栏社交图标
+social:
+  fab fa-github: https://github.com/MAPLEYOU || GitHub
+  fas fa-rss: /atom.xml || RSS 订阅
 
 # 首页文章封面: 没写 cover 的文章不显示封面图, 首页更干净
 index:

@@ -1,0 +1,146 @@
+/* 专栏目录页样式 (参考教程站目录模式) */
+.course-toc {
+  margin: 8px 0 24px;
+}
+
+.course-intro {
+  padding: 14px 18px;
+  border-radius: 10px;
+  background: rgba(66, 90, 239, 0.06);
+  border: 1px solid rgba(66, 90, 239, 0.18);
+  font-size: 0.95em;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.course-chapter {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin: 1.8em 0 0.5em;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed rgba(66, 90, 239, 0.35);
+}
+
+.course-list {
+  list-style: none;
+  counter-reset: course;
+  padding-left: 0;
+  margin: 0.6em 0 1.4em;
+}
+
+.course-list li {
+  counter-increment: course;
+  margin: 12px 0;
+  padding-left: 46px;
+  position: relative;
+  min-height: 30px;
+}
+
+.course-list li::before {
+  content: counter(course);
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: #425aef;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.course-list li.course-empty::before {
+  background: rgba(66, 90, 239, 0.25);
+}
+
+.course-list a {
+  color: var(--font-color, #363636);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(66, 90, 239, 0.3);
+  transition: all 0.2s;
+}
+
+.course-list a:hover {
+  color: #425aef;
+  border-bottom-color: #425aef;
+}
+
+.course-list li.course-empty {
+  color: var(--font-color, #363636);
+  opacity: 0.55;
+}
+
+.course-list li.course-empty .course-plan {
+  font-size: 0.85em;
+  opacity: 0.75;
+}
+
+/* 专栏总览卡片 */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.course-card {
+  display: block;
+  padding: 20px 22px;
+  border-radius: 12px;
+  border: 1px solid rgba(66, 90, 239, 0.2);
+  background: rgba(66, 90, 239, 0.05);
+  color: var(--font-color, #363636);
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.course-card:hover {
+  transform: translateY(-3px);
+  border-color: #425aef;
+  box-shadow: 0 6px 18px rgba(66, 90, 239, 0.15);
+  color: var(--font-color, #363636);
+}
+
+.course-card .cc-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #425aef;
+  margin-bottom: 8px;
+}
+
+.course-card .cc-desc {
+  font-size: 0.9em;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
+
+.course-card .cc-meta {
+  font-size: 0.8em;
+  opacity: 0.6;
+}
+
+/* 暗黑模式适配 */
+[data-theme="dark"] .course-intro,
+[data-theme="dark"] .course-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+[data-theme="dark"] .course-card:hover {
+  border-color: #7f9bff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .course-card .cc-title,
+[data-theme="dark"] .course-list a:hover {
+  color: #7f9bff;
+}
+
+[data-theme="dark"] .course-list li::before {
+  background: #5b73f2;
+}
