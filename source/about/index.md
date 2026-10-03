@@ -12,8 +12,14 @@ Lucas, 坐标上海, 搞 ISP 图像处理 / Camera 适配的程序员。
 
 ## 找到我
 
-- 公众号: 码尘飞扬社
+- 公众号: **码尘飞扬社**（微信扫码关注）
 - GitHub: [MAPLEYOU](https://github.com/MAPLEYOU)
+
+<div style="text-align:center; margin: 16px 0">
+
+![微信扫码关注公众号: 码尘飞扬社](/img/wechat-poster.png)
+
+</div>
 
 ## 关于本站
 

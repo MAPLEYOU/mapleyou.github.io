@@ -1,0 +1,10 @@
+bottom:
+  - class_name: card-wechat
+    id_name: card-wechat
+    name: 公众号
+    icon: fab fa-weixin
+    html: >
+      <div style="text-align:center">
+        <img src="/img/wechat-poster.png" alt="微信扫码关注公众号: 码尘飞扬社" style="width:100%;max-width:240px;border-radius:10px;border:1px solid rgba(7,193,96,.25)">
+        <div style="font-size:.85em;opacity:.65;margin-top:8px">码尘飞扬社 · 微信扫码关注</div>
+      </div>
