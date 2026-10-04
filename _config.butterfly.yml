@@ -71,6 +71,10 @@ aside:
     enable: true
     description:
       - ISP / 相机影像 / 开发随笔
+    button:
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/MAPLEYOU
   card_announcement:
     enable: false
   card_recent_post:
