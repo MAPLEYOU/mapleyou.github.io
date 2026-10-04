@@ -92,7 +92,7 @@ aside:
   card_archives:
     enable: false
   card_webinfo:
-    enable: false
+    enable: true
 
 # 评论: giscus（基于 GitHub Discussions，数据在本仓库）
 comments:
