@@ -23,6 +23,18 @@ footer:
     since: 2026
   custom_text: '<a href="https://github.com/MAPLEYOU/mapleyou.github.io" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub 订阅本站</a>'
 
+# 页面顶部横幅风景图 (Pexels 免费图库)
+# 首页全屏 banner
+index_img: /img/banner/mountain-2.jpg
+# 其余页面默认 (含文章页/自定义页)
+default_top_img: /img/banner/mountain-1.jpg
+# 归档页
+archive_img: /img/banner/forest-1.jpg
+# 标签页
+tag_img: /img/banner/coast-2.jpg
+# 分类页
+category_img: /img/banner/coast-1.jpg
+
 # 全站注入
 inject:
   head:
