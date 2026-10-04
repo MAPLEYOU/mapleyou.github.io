@@ -41,6 +41,8 @@ inject:
     - <link rel="stylesheet" href="/css/course.css">
 
 # 侧边栏社交图标
+favicon: /img/favicon.png
+
 social:
   fab fa-github: https://github.com/MAPLEYOU || GitHub
   fas fa-rss: /atom.xml || RSS 订阅

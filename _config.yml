@@ -5,7 +5,7 @@
 title: Lucas 的小站
 subtitle: ''
 description: 'ISP / 相机影像 / 开发随笔'
-keywords:
+keywords: ISP, 图像处理, Camera, Linux 内核, C语言, Android, 音视频
 author: Lucas
 language: zh-CN
 timezone: 'Asia/Shanghai'
@@ -90,7 +90,7 @@ feed:
   type: atom
   path: atom.xml
   limit: 20
-  content:
+  content: true
   content_limit: 140
   content_limit_delimiter: ' '
   order_by: -date
