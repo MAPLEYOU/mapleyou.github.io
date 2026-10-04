@@ -93,3 +93,22 @@ aside:
     enable: false
   card_webinfo:
     enable: false
+
+# 评论: giscus（基于 GitHub Discussions，数据在本仓库）
+comments:
+  use: giscus
+  text: true
+  lazyload: true
+
+giscus:
+  repo: MAPLEYOU/mapleyou.github.io
+  repo_id: R_kgDOU5mdwQ
+  category_id: DIC_kwDOU5mdwc4DG_qz
+  light_theme: light
+  dark_theme: dark
+
+# 访问统计: 不蒜子
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
