@@ -144,3 +144,19 @@
 [data-theme="dark"] .course-list li::before {
   background: #5b73f2;
 }
+
+/* ---------- 代码块 ---------- */
+/* 语言标签统一大写；纯文本块（```text）不显示 "text" 字样，
+   因为日志/示意图挂个 TEXT 标签容易被误读成「渲染失败」 */
+figure.highlight .highlight-tools .code-lang {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .6px;
+}
+figure.highlight.text .highlight-tools .code-lang {
+  display: none;
+}
+/* 纯文本块弱化头部，视觉上更像「命令行输出」 */
+figure.highlight.text .highlight-tools {
+  opacity: .75;
+}
