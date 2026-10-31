@@ -39,6 +39,10 @@ category_img: /img/banner/coast-1.jpg
 inject:
   head:
     - <link rel="stylesheet" href="/css/course.css">
+  bottom:
+    # 不蒜子（busuanzi）官方接口长期 502，换成 Vercount：
+    # 它是 drop-in 兼容实现，会填充不蒜子那套 span id，不用改模板
+    - <script defer src="https://events.vercount.one/js"></script>
 
 # 侧边栏社交图标
 favicon: /img/favicon.png
