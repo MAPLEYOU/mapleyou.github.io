@@ -1,6 +1,9 @@
 # Butterfly 主题配置覆盖
 # 完整配置参考: https://butterfly.js.org/
 
+# 代码块高亮配色（darker = 深色底，比默认浅色更有对比度）
+highlight_theme: darker
+
 # 顶部导航菜单 (注意: menu 是顶层配置)
 menu:
   首页: / || fas fa-home
