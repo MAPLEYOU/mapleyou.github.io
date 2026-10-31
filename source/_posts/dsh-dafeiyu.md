@@ -10,6 +10,7 @@ tags:
 categories:
   - 折腾记录
 cover: /img/dsh-dafeiyu/cover.png
+top_img: /img/dsh-dafeiyu/banner.png
 ---
 
 想给 QQ 里塞一个会说话、有记忆、会发表情的 AI 角色，网上的教程大多长这样：「先装网关，再配 OneBot v11，填好反向 WS 地址和 token」。
